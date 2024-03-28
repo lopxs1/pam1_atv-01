@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerta</title>
+</head>
+<body>
+    <script>
+        let nome = "";
+
+        nome = window.prompt("Digite seu nome: ")
+        window.alert("Bem-vindo " + nome);
+        let exibe = window.confirm("deseja exibir o nome?")
+        if (exibe==true) {
+            window.alert(nome);
+            window.document.write("Bem-vindo " + nome);
+        }
+        else
+        {
+            document.write("<h1> operação cancelado</h1>")
+        }
+    </script>
+</body>
+</html>
