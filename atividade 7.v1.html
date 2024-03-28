@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>Converter para Caixa Alta</h2>
+        <br>
+        <input type="text" id="inputText" placeholder="Digite uma palavra:">
+        <button onclick="caixaalta()">Converter</button>
+        <p id="resultado"></p>
+
+        <script>
+            function caixaalta() {
+                var texto = document.getElementById("inputText").value;
+
+                var textoCaixaAlta = texto.toUpperCase();
+
+                document.getElementById("resultado").innerText = textoCaixaAlta;
+            }
+        </script>
+    </body>
+</html>
